@@ -19,7 +19,7 @@ interface ModalAddFoodProps{
   handleAddFood: (data: AddFood) => void;
 }
 
-export function ModalAddFood({isOpen ,setIsOpen, handleAddFood }: ModalAddFoodProps) {
+export default function ModalAddFood({isOpen ,setIsOpen, handleAddFood }: ModalAddFoodProps) {
 
   const handleSubmit = async (data : AddFood) => {
     handleAddFood(data);
